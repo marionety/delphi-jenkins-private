@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/08/24 10:16:29.000.486,=rtl.dcp</Transaction>
+    <Transaction>2015/09/10 10:25:16.000.679,=rtl.dcp</Transaction>
+    <Transaction>2015/09/10 15:58:42.000.642,=rtl.dcp</Transaction>
+    <Transaction>2015/09/17 16:58:04.798,=rtl.dcp</Transaction>
+    <Transaction>2015/09/17 16:59:12.335,=C:\Users\marioromero\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2015/09/17 17:00:41.059,C:\Users\marioromero\Documents\JENKINS\ProyectoPrueba\TestsUnitarios\GeneradorSaludosTests.pas=C:\Users\marioromero\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2015/09/17 17:00:55.639,C:\Users\marioromero\Documents\JENKINS\ProyectoPrueba\TestsUnitarios\TestsUnitarios.dproj=C:\Users\marioromero\Documents\Embarcadero\Studio\Projects\Package1.dproj</Transaction>
+    <Transaction>2015/09/17 17:01:17.707,C:\Users\marioromero\Documents\JENKINS\ProyectoPrueba\TestsUnitarios\TestsUnitariosLibreria.dproj=C:\Users\marioromero\Documents\JENKINS\ProyectoPrueba\TestsUnitarios\TestsUnitarios.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

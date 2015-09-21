@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{BE64EFC7-0CC1-4EF2-BC62-96A127978838}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Vistas\ProyectoVistas.dproj">
+            <Dependencies>Librerias\Libreria.dproj</Dependencies>
+        </Projects>
+        <Projects Include="Librerias\Libreria.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TestsUnitarios\TestsUnitariosLibreria.dproj">
+            <Dependencies>Librerias\Libreria.dproj</Dependencies>
+        </Projects>
+        <Projects Include="TestsUnitarios\TestsUnitarios.dproj">
+            <Dependencies>Librerias\Libreria.dproj;TestsUnitarios\TestsUnitariosLibreria.dproj</Dependencies>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ProyectoVistas" DependsOnTargets="Libreria">
+        <MSBuild Projects="Vistas\ProyectoVistas.dproj"/>
+    </Target>
+    <Target Name="ProyectoVistas:Clean" DependsOnTargets="Libreria:Clean">
+        <MSBuild Projects="Vistas\ProyectoVistas.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProyectoVistas:Make" DependsOnTargets="Libreria:Make">
+        <MSBuild Projects="Vistas\ProyectoVistas.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Libreria">
+        <MSBuild Projects="Librerias\Libreria.dproj"/>
+    </Target>
+    <Target Name="Libreria:Clean">
+        <MSBuild Projects="Librerias\Libreria.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Libreria:Make">
+        <MSBuild Projects="Librerias\Libreria.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestsUnitariosLibreria" DependsOnTargets="Libreria">
+        <MSBuild Projects="TestsUnitarios\TestsUnitariosLibreria.dproj"/>
+    </Target>
+    <Target Name="TestsUnitariosLibreria:Clean" DependsOnTargets="Libreria:Clean">
+        <MSBuild Projects="TestsUnitarios\TestsUnitariosLibreria.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestsUnitariosLibreria:Make" DependsOnTargets="Libreria:Make">
+        <MSBuild Projects="TestsUnitarios\TestsUnitariosLibreria.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestsUnitarios" DependsOnTargets="Libreria;TestsUnitariosLibreria">
+        <MSBuild Projects="TestsUnitarios\TestsUnitarios.dproj"/>
+    </Target>
+    <Target Name="TestsUnitarios:Clean" DependsOnTargets="Libreria:Clean;TestsUnitariosLibreria:Clean">
+        <MSBuild Projects="TestsUnitarios\TestsUnitarios.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestsUnitarios:Make" DependsOnTargets="Libreria:Make;TestsUnitariosLibreria:Make">
+        <MSBuild Projects="TestsUnitarios\TestsUnitarios.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ProyectoVistas;Libreria;TestsUnitariosLibreria;TestsUnitarios"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ProyectoVistas:Clean;Libreria:Clean;TestsUnitariosLibreria:Clean;TestsUnitarios:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ProyectoVistas:Make;Libreria:Make;TestsUnitariosLibreria:Make;TestsUnitarios:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

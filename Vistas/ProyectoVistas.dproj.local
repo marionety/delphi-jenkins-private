@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/07/23 09:56:04.000.715,=C:\Users\marioromero\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/07/23 10:00:07.000.151,=C:\Users\marioromero\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/09/10 15:59:26.000.002,=C:\Users\marioromero\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/09/17 11:19:12.000.222,=C:\Users\marioromero\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2015/09/17 11:25:21.000.380,C:\Users\marioromero\Documents\JENKINS\ProyectoPrueba\Vistas\Formulario.dfm=C:\Users\marioromero\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2015/09/17 11:25:21.000.380,C:\Users\marioromero\Documents\JENKINS\ProyectoPrueba\Vistas\Formulario.pas=C:\Users\marioromero\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2015/09/17 11:26:22.000.285,C:\Users\marioromero\Documents\JENKINS\ProyectoPrueba\Vistas\ProyectoVistas.dproj=C:\Users\marioromero\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
