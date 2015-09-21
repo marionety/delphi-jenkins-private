@@ -10,7 +10,7 @@ SET OUTPUT_PATH=".\Output"
 SET RSVARS="C:\Program Files (x86)\Embarcadero\Studio\14.0\bin\rsvars.bat"
 CALL %RSVARS%
 SET PATH=%PATH%
-SET SEARCH_PATH="C:\Users\marioromero\.jenkins\jobs\Prueba Compilacion Libreria\workspace\Librerias\Output;C:\Users\marioromero\.jenkins\jobs\Prueba Tests Unitarios\workspace\TestsUnitarios\Output"
+SET SEARCH_PATH=".\Librerias\Output;.\TestsUnitarios\Output"
 
 echo Current Folder: %cd% 
 echo Current SEARCH_PATH: %cd%%SEARCH_PATH%
